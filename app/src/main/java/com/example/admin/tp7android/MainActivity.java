@@ -23,4 +23,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onClick2(View view) {
+        Intent intent = new Intent(MainActivity.this,ResponseActivity.class);
+        intent.putExtra("param", "Je viens du bouton1");
+        startActivity(intent);
+    }
 }
